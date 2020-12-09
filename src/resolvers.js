@@ -12,9 +12,10 @@ const resolvers = {
   },
   Mutation: {
       
-      createMas: (parent, { number, rand}, context, info) => {
+      createMas: (parent, { number}, context, info) => {
+      number[5] = getRandomInt();
 
-      const newMas = { number, rand: getRandomInt() };
+      const newMas = { number };
 
       numbers.push(newMas);
 

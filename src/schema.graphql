@@ -4,9 +4,8 @@ type Query {
 
 type Mas {
   number: [Int],
-  rand: Int
 }
 
 type Mutation {
-  createMas(number: [Int], rand: Int): Mas!
+  createMas(number: [Int]): Mas!
 }
