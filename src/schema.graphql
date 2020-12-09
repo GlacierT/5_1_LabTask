@@ -1,0 +1,12 @@
+type Query {
+  numbers: [Mas]!
+}
+
+type Mas {
+  number: [Int],
+  rand: Int
+}
+
+type Mutation {
+  createMas(number: [Int], rand: Int): Mas!
+}
